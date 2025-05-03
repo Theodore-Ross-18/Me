@@ -18,11 +18,3 @@ if (form) {
         form.reset();
     });
 }
-
-const themeToggle = document.getElementById('theme-toggle');
-const root = document.documentElement;
-
-themeToggle.addEventListener('click', () => {
-    root.classList.toggle('dark-mode');
-    themeToggle.textContent = root.classList.contains('dark-mode') ? '☀️' : '🌙';
-});

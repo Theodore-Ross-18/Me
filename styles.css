@@ -205,3 +205,37 @@ html {
 section {
     scroll-margin-top: 100px;
 }
+
+/* Update the main layout */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+/* Create vertical columns */
+#content-columns {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Style for each section */
+section {
+    padding: 2rem;
+    margin: 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+/* Update project grid layout */
+.project-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
